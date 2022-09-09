@@ -1,13 +1,25 @@
 <template>
-  <div>
-    <van-button type="primary">主要按钮</van-button>
-    <van-button type="success">成功按钮</van-button>
-    <van-button type="default">默认按钮</van-button>
-    <van-button type="warning">警告按钮</van-button>
-    <van-button type="danger">危险按钮</van-button>
+  <div class="home">
+    <home-nav-bar></home-nav-bar>
+    <div class="banner">
+      <img src="@/assets/img/home/banner.webp" alt="" />
+    </div>
+    <home-nav-box></home-nav-box>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import homeNavBar from './cpns/home-nav-bar.vue'
 
-<style lang="less" scoped></style>
+import HomeNavBox from './cpns/home-nav-box.vue'
+</script>
+
+<style lang="less" scoped>
+.banner {
+  height: 150px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+</style>
